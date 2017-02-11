@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<h2>Articles by {{ author }}</h2>
+
+{% for article in articles_page.object_list %}
+	{% include '_article.html' %}
+{% endfor %}
+
+{% include '_pagination.html' %}
+
+{% endblock %}
+
+
