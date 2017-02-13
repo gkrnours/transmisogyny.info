@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block head %}
+{{ super() -}}
+{% if page.author %}
+<meta name=author content="{{ page.author }}">
+{% endif %}
+{% if page.summary %}
+<meta name=description content="{{ page.summary|striptags }}">
+{% endif %}
+{% if page.tags %}
+<meta name=keywords content="{{ page.tags | join(", ")}}">
+{% endif %}
+{% endblock %}
+
+{% block content %}
+	<article>
+		<header>
+			<h2><a href="{{ SITEURL }}/{{ page.url }}" rel=bookmark
+				title="Permalink to {{ page.title|striptags }}">
+				{{ page.title }}</a>
+			</h2>
+		</header>
+		<main>
+			{{ page.content }}
+		</main>
+		<hr>
+		<footer>
+			{% if page.date %}
+			<time datetime="{{ page.date.isoformat() }}">
+				Published on {{ page.locale_date }}</time>
+			{% endif %}
+			{% if page.modified %}
+			<time datetime="{{ page.modified.isoformat() }}">
+				Last modified on {{ page.last_modified }}</time>
+			{% endif %}
+			<address>By{% for author in page.authors %}
+				<a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
+			{% endfor %}
+			</address>
+		</footer
+
+{% endblock %}
+
+
