@@ -8,7 +8,7 @@ html, body{
 	color: orchid; font-family: monospace;
 }
 #wrap, footer{
-	width: 800px;
+	width: 95%;
 	margin: auto;
 }
 #wrap{
@@ -35,13 +35,6 @@ header {
 article {
 	border-left: 2px solid orchid;
 	padding-left: 16px;
-}
-#wrap > nav {
-	float: left;
-	width: 200px;
-}
-#wrap > main {
-	margin-left: 200px;
 }
 nav.paginator {
 	margin: 16px 0;
@@ -80,4 +73,17 @@ ul{
 
 p{
 	margin: 0px 0px 10px;
+}
+
+@media (min-width: 810px) {
+	#wrap, footer{
+		width: 800px;
+	}
+	#wrap > nav {
+		float: left;
+		width: 200px;
+	}
+	#wrap > main {
+		margin-left: 200px;
+	}
 }
