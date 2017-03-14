@@ -26,7 +26,11 @@ html, body{
 	margin-top: 16px;
 	border-top: 1px solid orchid;
 }
+main, nav, footer, article, header{
+	display: block;
+}
 header {
+	display: block;
 	margin-bottom: 16px;
 }
 #wrap > header{
