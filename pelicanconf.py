@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 from os import path
 
 AUTHOR = u'Hypatia'
-SITENAME = u'Transmisoginy'
+SITENAME = u'Transmisogyny'
 SITEURL = ''
 THEME = path.join(path.dirname(__file__), 'iridescent')
 print(THEME)
