@@ -1,4 +1,4 @@
-Title: Transmisoginy
+Title: Transmisogyny
 Status: hidden
 Save_as: index.html
 
