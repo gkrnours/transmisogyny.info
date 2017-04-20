@@ -15,32 +15,6 @@
 			<h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
 		</header>
 
-		<nav>
-		{% if MENUITEMS %}
-		<h3>Menu</h3>
-		<ul>{% for title, link in MENUITEMS %}
-			<li><a href="{{ link }}">{{ title }}</a>{% endfor %}
-		</ul>
-		{% endif %}
-		{% if DISPLAY_PAGES_ON_MENU and PAGES %}
-		<h3>Pages</h3>
-		<ul>
-			{% for p in PAGES %}
-			<li{% if p == page %} class=active{% endif %}>
-				<a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
-			{% endfor %}
-		</ul>
-		{% endif %}
-		{% if DISPLAY_CATEGORIES_ON_MENU and categories%}
-		<h3>Categories</h3>
-		<ul>{% for cat, null in categories %}
-			<li{% if cat == category %} class=active{% endif %}>
-				<a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
-			{% endfor %}
-		</ul>
-		{% endif %}
-		</nav>
-
 		<main>{% block content %}
 		{% endblock %}</main>
 	</div>

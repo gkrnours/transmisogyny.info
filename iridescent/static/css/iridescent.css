@@ -40,10 +40,6 @@ article {
 	border-left: 2px solid orchid;
 	padding-left: 16px;
 }
-nav.paginator {
-	margin: 16px 0;
-	text-align: right;
-}
 h1, h1 a:visited, h2, h2 a:visited, h3, h3 a:visited,
 h4, h4 a:visited, h5, h5 a:visited, h6, h6 a:visited{
 	color: aqua;
@@ -83,11 +79,7 @@ p{
 	#wrap, footer{
 		width: 800px;
 	}
-	#wrap > nav {
-		float: left;
-		width: 200px;
-	}
 	#wrap > main {
-		margin-left: 200px;
+		margin-left: 0px;
 	}
 }
