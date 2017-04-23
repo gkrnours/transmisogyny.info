@@ -5,7 +5,7 @@ from os import path
 
 AUTHOR = u'Hypatia'
 SITENAME = u'Transmisogyny'
-SITEURL = ''
+SITEURL = 'transmisogyny.info'
 THEME = path.join(path.dirname(__file__), 'iridescent')
 print(THEME)
 
@@ -21,6 +21,8 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+
+SITE_IMAGE = u'images/logo.png'
 
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
@@ -39,4 +41,4 @@ DEFAULT_PAGINATION = 10
 INDEX_SAVE_AS = "blog.html"
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
