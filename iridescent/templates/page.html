@@ -34,9 +34,11 @@
 			<time datetime="{{ page.modified.isoformat() }}">
 				Last modified on {{ page.last_modified }}</time>
 			{% endif %}
+			{% if DISPLAY_AUTHOR %}
 			<address>By{% for author in page.authors %}
 				<a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
 			{% endfor %}
+			{% endif %}
 			</address>
 		</footer
 

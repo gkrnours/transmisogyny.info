@@ -24,6 +24,8 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+DISPLAY_AUTHOR = None
+
 SITE_IMAGE = u'images/logo.png'
 
 # Blogroll
