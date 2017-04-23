@@ -11,6 +11,8 @@ print(THEME)
 
 PATH = 'content'
 
+COPYRIGHT_TEXT = u'Transmisogyny.info - Hypatia Software Organization &#169;'
+
 TIMEZONE = 'UTC'
 
 DEFAULT_LANG = u'en'
