@@ -18,7 +18,7 @@ html, body{
 #wrap:after{
 	content: "";
 	display: block;
-	height: 40px;
+	height: 72px;
 }
 #wrap + footer{
 	height: 39px;
@@ -26,9 +26,11 @@ html, body{
 	margin-top: 16px;
 	border-top: 1px solid orchid;
 }
+
 main, nav, footer, article, header{
 	display: block;
 }
+
 header {
 	display: block;
 	margin-bottom: 16px;
@@ -36,6 +38,20 @@ header {
 #wrap > header{
 	border-bottom: 2px solid aqua;
 }
+
+#wrap > nav{
+	border-bottom: 2px solid aqua;
+	padding-bottom: 16px;
+}
+#wrap > nav li{
+	display: block;
+}
+#wrap > nav li a{
+	display: block;
+	padding: 10px;
+	text-align: center;
+}
+
 article {
 	border-left: 2px solid orchid;
 	padding-left: 16px;
@@ -79,7 +95,21 @@ p{
 	#wrap, footer{
 		width: 800px;
 	}
-	#wrap > main {
+	#wrap > main{
 		margin-left: 0px;
+	}
+	#wrap > nav li{
+		display: inline-block;
+	}
+	#wrap > nav li:not(:first-of-type){
+		border-left: 1px solid aqua;
+	}
+}
+@media (min-width: 22em) {
+	#wrap > nav{
+		column-count: 2;
+	}
+	#wrap > nav ul{
+		margin: 0;
 	}
 }
