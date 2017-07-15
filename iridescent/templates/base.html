@@ -21,8 +21,8 @@
 		<nav role="">
 		{% for title, link in MENUITEMS %}
 			<a href="{{ link }}">{{ title }}</a>{% endfor %}
-		{% endif %}
 		</nav>
+		{% endif %}
 
 		<main>{% block content %}
 		{% endblock %}</main>

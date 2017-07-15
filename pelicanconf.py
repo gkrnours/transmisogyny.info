@@ -38,7 +38,7 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 SOCIAL = (('You can add links in your config file', '#'),
           ('Another social link', '#'),)
 
-# MENUITEMS = (("Testimony", "%s/blog.html" % SITEURL),)
+MENUITEMS = (("FIXME", "%s/blog.html" % SITEURL),)
 
 DEFAULT_PAGINATION = 10
 
