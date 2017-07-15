@@ -40,20 +40,15 @@ header {
 #wrap > header{
 	border-bottom: 2px solid aqua;
 }
+#wrap > header h1{
+	text-align: center;
+}
 
-<<<<<<< HEAD
 #wrap > nav{
 	border-bottom: 2px solid aqua;
 	padding-bottom: 16px;
-}
-#wrap > nav li{
-	display: block;
-}
-#wrap > nav li a{
-	display: block;
-	padding: 10px;
 	text-align: center;
-=======
+}
 #wrap > nav a{
 	padding-left: 10px;
 	border-left: 2px solid aqua;
@@ -61,7 +56,6 @@ header {
 #wrap > nav a:first-of-type{
 	border-left: none;
 	padding-left: 0;
->>>>>>> Make the menu a line below the logo
 }
 
 article {
@@ -103,28 +97,3 @@ p{
 	margin: 0px 0px 10px;
 }
 
-<<<<<<< HEAD
-@media (min-width: 810px) {
-	#wrap, footer{
-		width: 800px;
-	}
-	#wrap > main{
-		margin-left: 0px;
-	}
-	#wrap > nav li{
-		display: inline-block;
-	}
-	#wrap > nav li:not(:first-of-type){
-		border-left: 1px solid aqua;
-	}
-}
-@media (min-width: 22em) {
-	#wrap > nav{
-		column-count: 2;
-	}
-	#wrap > nav ul{
-		margin: 0;
-	}
-}
-=======
->>>>>>> Make the menu a line below the logo
