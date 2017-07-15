@@ -17,11 +17,12 @@
 			</a></h1>
 		</header>
 
-		{% if MENUITEMS %}<nav role="">
-			<ul>{% for title, link in MENUITEMS %}
-				<li><a href="{{ link }}">{{ title }}</a>{% endfor %}
-			</ul>
-		</nav>{% endif %}
+		{% if MENUITEMS %}
+		<nav role="">
+		{% for title, link in MENUITEMS %}
+			<a href="{{ link }}">{{ title }}</a>{% endfor %}
+		{% endif %}
+		</nav>
 
 		<main>{% block content %}
 		{% endblock %}</main>
